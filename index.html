@@ -146,7 +146,10 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-<script type="text/javascript">    
+<script type="text/javascript">   
+    var intervalFunction = setInterval(function(){ 
+alert(document.readyState);
+    },10);
     var fixedSpeed = 3;
 
     var nowBallY = 0, nowBallX = 0;
@@ -169,7 +172,7 @@
 
     $(function(){
         //球體移動規則
-        var intervalFunction = setInterval(function(){
+        var intervalFunction = setInterval(function(){ 
             ballR2 = +$(".ball").css('width').substring(0, $(".ball").css('width').search('px'));
             nowBoardX = +$(".board").css("left").substring(0,$('.board').css("left").search('px'));
             nowBoardY = +$(".board").css("top").substring(0, $(".board").css("top").search('px'));
