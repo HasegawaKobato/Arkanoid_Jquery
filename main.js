@@ -20,6 +20,7 @@ var fireballTimer = 0, rebound = 0, reboundTimer = 0, previosTileTop = 0, clearT
 var achivementList = [];
 
 $(document).ready(function() {
+    alert("!");
     $(function(){
         //球體移動規則
         var intervalFunction = setInterval(function(){
